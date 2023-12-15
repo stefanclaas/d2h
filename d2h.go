@@ -16,7 +16,7 @@ func main() {
 
 	// Check whether exactly one flag is set
 	if (*encode && *decode) || (!*encode && !*decode) {
-		fmt.Println("Please enter exactly one flag: -e for Encode or -d for Decode.")
+		fmt.Println("Please enter either -e for encoding or -d for decoding.")
 		os.Exit(1)
 	}
 
